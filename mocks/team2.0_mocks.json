@@ -1,0 +1,70 @@
+{
+  "uuid": "bc2c3d91-b9ac-41e3-aac4-a98499205daa",
+  "lastMigration": 24,
+  "name": "Team2.0 mocks",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "86fdc740-176a-4fd3-a297-41f759e865ec",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "players/list",
+      "responses": [
+        {
+          "uuid": "64cdeb80-25d9-4ad3-9131-1817c398391a",
+          "body": "[\n{{#repeat 5 10 comma=true}}\n  {\n  \"id\": {{objectId}},\n  \"firstName\": {{firstName}},\n  \"lastName\": {{lastName}}\n  }\n{{/repeat}}\n]\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
